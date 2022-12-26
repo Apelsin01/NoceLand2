@@ -1,0 +1,17 @@
+$var1: #141414;
+$var2: #666666;
+
+.footer {
+	margin-top: 100px;
+	background-color:$var1;
+	&__logo {
+	}
+	&__text {
+		margin-top: 20px;
+		color: $var2;
+	}
+}
+.foote__rinner {
+	padding: 30px 0;
+	text-align: center;
+}
