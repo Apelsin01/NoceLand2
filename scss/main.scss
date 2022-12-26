@@ -1,0 +1,357 @@
+/* Intro */
+
+$var1: #666666;
+
+.intro {
+	padding-top: 120px;
+	&__content {
+		display: flex;
+		column-gap: 50px;
+        
+        &__img img {
+            max-width: 100%;
+            height: auto;
+        }
+        &__info {
+            max-width: 430px;
+            text-transform: uppercase;
+        }
+        &__ilus {
+            margin-bottom: 18px;
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 27px;
+        }
+        &__text {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 16px;
+            color: $var1;
+            text-transform: none;
+            margin-bottom: 28px;
+        }
+        &__aftor {
+        }
+    }	
+}
+
+@media(max-width:1024px){
+    .intro__info {
+        max-width: 400px;
+        text-transform: uppercase;
+    }
+    
+    .intro__ilus {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .intro__title {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+    .intro__text {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .intro__aftor {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:930px){
+
+    .intro__content {
+        display: flex;
+        column-gap: 30px;
+    }
+    .intro__info {
+        max-width: 400px;
+        text-transform: uppercase;
+    }
+    
+    .intro__ilus {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .intro__title {
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+    .intro__text {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .intro__aftor {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 768px){
+    &__content {
+        display: flex;
+        column-gap: 0px;
+        flex-direction: column;
+    }
+    &__ilus {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+    
+    &__title {
+        font-size: 20px;
+        line-height: none;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    &__aftor {
+        font-size: 10px;
+    }
+}
+
+/* Intro end */
+
+
+
+
+/* News */
+$var1: #666666;
+
+.news {
+	padding-top: 60px;
+	&__inner--top {
+		display: grid;
+		grid-template-columns: 386.66px 386.66px 386.66px;
+		column-gap: 10px;
+		row-gap: 90px;
+	}
+	&__border--bottom {
+		content: '';
+		display: block;
+		background-color: $var1;
+		height: 1px;
+		width: 100%;
+		margin: 65px 0 130px;
+	}
+	&__inner--bottom {
+		display: grid;
+		grid-template-columns: 285px 285px 285px 285px;
+		column-gap: 10px;
+		row-gap: 90px;
+	}
+	&__title--bottom {
+		font-size: 15px;
+	}
+	&__item {
+	}
+	&__img {
+		max-width: 100%;
+		height: auto;
+	}
+	&__text {
+		margin-top: 24px;
+	}
+	&__title {
+		margin-top: 18px;
+		max-width: 347px;
+	}
+	&__aftor {
+		margin-top: 15px;
+	}
+}
+
+
+
+@media(max-width:1024px){
+    .news {
+        padding-top: 60px;
+        &__inner--top {
+            grid-template-columns: 346.66px 346.66px;
+            row-gap: 70px;
+            justify-content: center;
+        }
+        &__img {
+            max-width: 100%;
+            height: auto;
+        }
+        &__text {
+            margin-top: 24px;
+        }
+        &__title {
+            margin-top: 18px;
+            max-width: 335px;
+        }
+        &__aftor {
+            margin-top: 15px;
+        }
+        &__inner--bottom {
+            grid-template-columns: 255px 255px;
+            justify-content: center;
+        }
+        &__border--bottom {
+            margin: 30px 0 80px;
+        }
+    }
+    
+}
+
+@media(max-width:768px){
+    .news {
+        padding-top: 60px;
+        &__inner--top {
+            grid-template-columns: 280px 280px;
+            row-gap: 40px;
+            justify-content: center;
+        }
+        &__img {
+            max-width: 100%;
+            height: auto;
+        }
+        &__text {
+            margin-top: 15px;
+        }
+        &__title {
+            font-size: 15px;
+            margin-top: 15px;
+            max-width: 300px;
+        }
+        &__aftor {
+            margin-top: 12px;
+        }
+    }
+    
+    
+}
+
+@media(max-width:579px){
+    .news__inner--top {
+        grid-template-columns: 280px;
+        row-gap: 40px;
+        justify-content: center;
+    }
+
+    .news__inner--bottom {
+        grid-template-columns: 225px;
+        justify-content: center;
+    }
+
+    .news__border--bottom{
+        margin: 10px 0 50px;
+    }
+}
+
+/* News end */
+
+/* Posts */
+
+.posts {
+	padding-top: 60px;
+	&__title {
+	}
+	&__subtitle {
+		margin-bottom: 30px;
+	}
+	&__news {
+		display: grid;
+		grid-template-columns: 590px 590px;
+		column-gap: 10px;
+		row-gap: 80px;
+	}
+	&__item {
+	}
+	&__img img {
+		max-width: 100%;
+		height: auto;
+	}
+	&__text {
+		margin: 25px 0 18px;
+	}
+	&__title {
+		margin-bottom: 15px;
+	}
+	&__aftor {
+	}
+}
+.text {
+}
+
+
+@media(max-width:1200px){
+    .posts {
+        padding-top: 60px;
+        &__news {
+            display: grid;
+            grid-template-columns: 550px 550px;
+            column-gap: 10px;
+            row-gap: 70px;
+        }
+    }
+}
+
+
+@media(max-width: 1024px){
+    .posts {
+        padding-top: 60px;
+        &__news {
+            display: grid;
+            grid-template-columns: 480px 480px;
+            column-gap: 10px;
+            row-gap: 70px;
+        }
+        &__text {
+            margin: 20px 0 15px;
+        }
+        &__title {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+    }
+    
+}
+
+@media(max-width:890px){
+    .posts {
+        padding-top: 60px;
+        &__news {
+            display: grid;
+            grid-template-columns: 400px 400px;
+            column-gap: 10px;
+            row-gap: 70px;
+        }
+        &__text {
+            margin: 20px 0 15px;
+        }
+        &__title {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+    }
+    
+}
+
+@media(max-width:768px){
+    .posts {
+        padding-top: 60px;
+        &__news {
+            display: grid;
+            grid-template-columns: 350px;
+            justify-content: center;
+            column-gap: 10px;
+            row-gap: 70px;
+        }
+        &__text {
+            margin: 20px 0 15px;
+        }
+        &__title {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+    }
+    
+}
+
