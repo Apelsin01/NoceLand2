@@ -90,26 +90,26 @@ $var1: #666666;
 }
 
 @media(max-width: 768px){
-    &__content {
+    .intro__content {
         display: flex;
         column-gap: 0px;
         flex-direction: column;
     }
-    &__ilus {
+    .intro__ilus {
         font-size: 10px;
         margin-bottom: 8px;
     }
     
-    &__title {
+    .intro__title {
         font-size: 20px;
         line-height: none;
         margin-bottom: 10px;
     }
-    &__text {
+    .intro__text {
         font-size: 12px;
         margin-bottom: 15px;
     }
-    &__aftor {
+    .intro__aftor {
         font-size: 10px;
     }
 }
@@ -354,4 +354,3 @@ $var1: #666666;
     }
     
 }
-
